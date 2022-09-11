@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: chaithanyahanusamplewebappmain 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: chaithanyahanusamplewebappmain
+  template:
+    metadata:
+      labels:
+        app: chaithanyahanusamplewebappmain 
+    spec:
+      containers:
+        - name: chaithanyahanusamplewebappmain 
+          image: sopcontainerregistry.azurecr.io/chaithanyahanusamplewebappmain
+          ports:
+          - containerPort: 80
