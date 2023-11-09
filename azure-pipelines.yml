@@ -13,7 +13,7 @@ variables:
   # Container registry service connection established during pipeline creation
   dockerRegistryServiceConnection: 'e0268f81-c2aa-4762-bd1c-48cefee64488'
   imageRepository: 'chaithanyahanusamplewebappmain'
-  containerRegistry: 'sopcontainerregistry.azurecr.io'
+  containerRegistry: 'demored678.azurecr.io'
   dockerfilePath: '**/Dockerfile'
   tag: '$(Build.BuildId)'
   imagePullSecret: 'sopcontainerregistryaabd-auth'
